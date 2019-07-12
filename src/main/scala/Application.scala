@@ -5,7 +5,7 @@ object Application extends App {
   val travelledDays = StdIn.readLine("Enter Number of days travelled:  \n")
 
   val mileage = 0.25 * 46
-  val tyneTunnel = 1.70 * 2
+  val tyneTunnel = 1.80 * 2
   val fourLaneEnds = 0.9
 
   def calculateMileage(days: String): String = {
@@ -16,7 +16,7 @@ object Application extends App {
 
   def calculateTolls(days: String): String = {
 
-    f"Tyne Tunnel @ (£1.70 x 2) per day. \n£$tyneTunnel%1.2f * $days days = £${tyneTunnel * days.toInt}%1.2f\n"
+    f"Tyne Tunnel @ (£1.80 x 2) per day. \n£$tyneTunnel%1.2f * $days days = £${tyneTunnel * days.toInt}%1.2f\n"
   }
 
   def calculateParking(days: String): String = {
